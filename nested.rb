@@ -114,7 +114,7 @@ end
 def adding_to_dennis
   # add "Assembly" to Dennis Ritchie's languages array
   # return the entire updated hash
-programmer_hash[:dennis_ritchie] << { :languages => "Assembly"}
+
 	programmer_hash = 
  		{
       :grace_hopper => {
@@ -130,6 +130,6 @@ programmer_hash[:dennis_ritchie] << { :languages => "Assembly"}
         :languages => ["C"]
       }
     }
-programmer_hash[:dennis_ritchie] << { :languages => "Assembly"}
+programmer_hash[:dennis_ritchie] << {:languages => "Assembly"}
 programmer_hash
 end
