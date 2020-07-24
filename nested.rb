@@ -91,7 +91,6 @@ end
 def changing_alan
   # change what Alan Kay is :known_for to the value of the alans_new_info variable. 
   # return the entire updated hash
-programmer_hash[:alan_kay][:known_for] = "GUI"
 
 	programmer_hash = 
  		{
@@ -108,7 +107,7 @@ programmer_hash[:alan_kay][:known_for] = "GUI"
         :languages => ["C"]
       }
     }
-puts programmer_hash
+programmer_hash[:alan_kay][:known_for] = "GUI"
 end
 
 def adding_to_dennis
@@ -130,5 +129,4 @@ programmer_hash[:dennis_ritchie] << { :languages => "Assembly"}
         :languages => ["C"]
       }
     }
-puts programmer_hash
-end
+programmer_hash[:dennis_ritchie] << { :languages => "Assembly"}end
